@@ -21,18 +21,15 @@ function adicionarAmigo() {
     input.value = '';
 }
 
-// Função para sortear um amigo
+// Sortear amigo
 function sortearAmigo() {
-    // Verificar se há amigos na lista
     if (amigos.length === 0) {
         alert('A lista de amigos está vazia. Adicione amigos antes de sortear.');
         return;
     }
-
-    // Gerar um índice aleatório
+ 
+    // gera amigo aleatório
     let indiceAleatorio = Math.floor(Math.random() * amigos.length);
-
-    // Obter o nome sorteado
     let amigoSorteado = amigos[indiceAleatorio];
 
     // Exibir o nome sorteado no elemento de resultado
